@@ -7,7 +7,7 @@
   --bg-deepest: #0a0e17;
   --bg-primary: #111827;
   --bg-secondary: #0f172a;
-  --bg-card: rgba(255, 255, 255, 0.03);
+  --bg-card: rgba(255, 255, 255, 0.02);
   --bg-card-hover: rgba(255, 255, 255, 0.05);
   --bg-input: rgba(255, 255, 255, 0.05);
 
@@ -137,9 +137,9 @@ h3 {
 }
 
 p {
-  font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.75;
   color: var(--text-body);
 }
 
@@ -173,19 +173,22 @@ section {
 }
 
 .card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  background:
+    linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
+    linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.02) 100%) border-box;
+  border: 1px solid transparent;
   border-radius: 20px;
   padding: clamp(24px, 5vw, 40px);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.06);
   transition: var(--transition-smooth);
 }
 
 .card:hover {
-  background: var(--bg-card-hover);
-  border-color: var(--border-default);
+  background:
+    linear-gradient(var(--bg-card-hover), var(--bg-card-hover)) padding-box,
+    linear-gradient(180deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0.03) 100%) border-box;
 }
 
 .glass {
@@ -285,7 +288,7 @@ section {
 }
 
 /* Prose — spacing for text-heavy sections */
-.prose p { margin-bottom: 1.4em; }
+.prose p { margin-bottom: 1.6em; }
 .prose p:last-child { margin-bottom: 0; }
 
 /* Animaciones */

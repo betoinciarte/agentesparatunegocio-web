@@ -28,8 +28,9 @@ import Layout from '../layouts/Layout.astro';
             15 años de experiencia en marketing y negocios + la tecnología de IA más avanzada del mercado = sistemas que no existen para nadie más que para ti.
           </p>
         </div>
-        <div class="hero-image animate-in" style="animation-delay:0.3s;">
-          <div style="border-radius:20px; border:1px solid var(--border-subtle); overflow:hidden; box-shadow:0 8px 40px rgba(0,0,0,0.4);">
+        <div class="hero-image animate-in" style="animation-delay:0.3s; position:relative;">
+          <div style="position:absolute;inset:-40px;background:radial-gradient(circle,rgba(244,132,95,0.15) 0%,transparent 70%);pointer-events:none;z-index:0;" aria-hidden="true"></div>
+          <div style="border-radius:20px; border:1px solid var(--border-subtle); overflow:hidden; box-shadow:0 8px 40px rgba(0,0,0,0.4); position:relative; z-index:1;">
             <img src="/Hero3.png" alt="Sistema de IA personalizado en acción" loading="eager" style="width:100%; display:block;" />
           </div>
         </div>
@@ -45,10 +46,10 @@ import Layout from '../layouts/Layout.astro';
         <h2 style="margin-bottom:24px;">Todos están usando inteligencia artificial. Casi nadie la está usando bien.</h2>
         <div class="prose" style="line-height:1.8;">
           <p>Abriste ChatGPT. Le pediste ideas para tu negocio. Te dio unas cuantas. Sonaban bien.</p>
-          <p>Pero tu competidor hizo lo mismo. Y recibió básicamente las mismas ideas.</p>
-          <p>Porque ChatGPT no sabe nada de tu negocio. No sabe quiénes son tus clientes. No sabe qué has probado antes y no funcionó. No sabe cuál es tu ventaja competitiva real. No sabe por qué algunos clientes te eligen a ti y no al de al lado.</p>
+          <p>Pero tu competidor hizo lo mismo. Y <strong>recibió básicamente las mismas ideas.</strong></p>
+          <p>Porque <strong>ChatGPT no sabe nada de tu negocio.</strong> No sabe quiénes son tus clientes. No sabe qué has probado antes y no funcionó. No sabe cuál es tu ventaja competitiva real. No sabe por qué algunos clientes te eligen a ti y no al de al lado.</p>
           <p>Entonces le das instrucciones. Le dices "actúa como experto." Mejora un poco. Pero sigue siendo genérico. Sigue siendo lo mismo que obtendría cualquier otro negocio que le pida lo mismo.</p>
-          <p>Y puedes pasar semanas — meses — intentando que la IA te dé algo realmente útil para TU caso. Probando prompts. Viendo tutoriales. Copiando lo que hace todo el mundo.</p>
+          <p>Y puedes pasar semanas — meses — intentando que la IA te dé algo realmente útil para TU caso. <strong>Probando prompts. Viendo tutoriales. Copiando lo que hace todo el mundo.</strong></p>
           <p style="color:var(--text-primary); font-weight:700; font-size:1.05rem;">Mientras tanto, los negocios que sí saben usar IA como ventaja competitiva te están sacando distancia.</p>
         </div>
       </div>
@@ -173,16 +174,16 @@ import Layout from '../layouts/Layout.astro';
             <div style="width:40px; height:40px; border-radius:50%; background:var(--coral-subtle); border:1px solid var(--coral-border); display:flex; align-items:center; justify-content:center; color:var(--coral); font-weight:800; font-size:14px; flex-shrink:0;">A</div>
             <p style="font-size:12px; color:var(--text-secondary); font-weight:700; text-transform:uppercase; letter-spacing:1px;">Coach de negocios · Bogotá</p>
           </div>
-          <p style="color:var(--text-secondary); font-size:14px; margin-bottom:16px;">Un coach de negocios en Bogotá pasaba 4 horas semanales solo escribiendo emails y posts. Le configuré un sistema que:</p>
+          <p style="color:var(--text-secondary); font-size:15px; margin-bottom:16px;">Un coach de negocios en Bogotá pasaba 4 horas semanales solo escribiendo emails y posts. Le configuré un sistema que:</p>
           <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; margin-bottom:20px;">
-            <li style="display:flex; gap:10px; font-size:14px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Escribe borradores en su tono (él solo edita 15-20 minutos por pieza)</li>
-            <li style="display:flex; gap:10px; font-size:14px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Conoce a sus 5 tipos de cliente ideal y adapta el mensaje para cada uno</li>
-            <li style="display:flex; gap:10px; font-size:14px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Evalúa sus anuncios ANTES de publicarlos y le dice qué perfil de cliente va a resonar</li>
-            <li style="display:flex; gap:10px; font-size:14px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Genera imágenes y videos cortos en su estilo visual sin tocar Canva ni Freepik</li>
+            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Escribe borradores en su tono (él solo edita 15-20 minutos por pieza)</li>
+            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Conoce a sus 5 tipos de cliente ideal y adapta el mensaje para cada uno</li>
+            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Evalúa sus anuncios ANTES de publicarlos y le dice qué perfil de cliente va a resonar</li>
+            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Genera imágenes y videos cortos en su estilo visual sin tocar Canva ni Freepik</li>
           </ul>
           <div style="padding:16px; background:var(--bg-primary); border-radius:10px; border-left:3px solid var(--coral);">
-            <p style="font-size:14px; font-weight:700; color:var(--text-primary); margin-bottom:4px;">Resultado:</p>
-            <p style="font-size:14px;">De 4 horas creando contenido a <strong>45 minutos editando</strong>. Su contenido pasó de ser intermitente a ser consistente todas las semanas. Sus seguidores notan la diferencia — pero piensan que contrató a un equipo.</p>
+            <p style="font-size:15px; font-weight:700; color:var(--text-primary); margin-bottom:4px;">Resultado:</p>
+            <p style="font-size:15px;">De 4 horas creando contenido a <strong>45 minutos editando</strong>. Su contenido pasó de ser intermitente a ser consistente todas las semanas. Sus seguidores notan la diferencia — pero piensan que contrató a un equipo.</p>
           </div>
         </div>
         <div class="card">
@@ -202,16 +203,16 @@ import Layout from '../layouts/Layout.astro';
             <div style="width:40px; height:40px; border-radius:50%; background:var(--coral-subtle); border:1px solid var(--coral-border); display:flex; align-items:center; justify-content:center; color:var(--coral); font-weight:800; font-size:14px; flex-shrink:0;">B</div>
             <p style="font-size:12px; color:var(--text-secondary); font-weight:700; text-transform:uppercase; letter-spacing:1px;">Consultora financiera · 8 empleados</p>
           </div>
-          <p style="color:var(--text-secondary); font-size:14px; margin-bottom:16px;">Una consultora financiera con 8 empleados era el cuello de botella de todo. Le configuré un sistema que:</p>
+          <p style="color:var(--text-secondary); font-size:15px; margin-bottom:16px;">Una consultora financiera con 8 empleados era el cuello de botella de todo. Le configuré un sistema que:</p>
           <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; margin-bottom:20px;">
-            <li style="display:flex; gap:10px; font-size:14px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Responde las preguntas de su equipo como ella las respondería (procesos, políticas, criterios)</li>
-            <li style="display:flex; gap:10px; font-size:14px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Revisa propuestas antes de enviarlas, usando los estándares de calidad que ella definió</li>
-            <li style="display:flex; gap:10px; font-size:14px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Califica prospectos automáticamente: quién vale la pena perseguir y quién no</li>
-            <li style="display:flex; gap:10px; font-size:14px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Entrena empleados nuevos en 2 días en lugar de 2 semanas</li>
+            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Responde las preguntas de su equipo como ella las respondería (procesos, políticas, criterios)</li>
+            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Revisa propuestas antes de enviarlas, usando los estándares de calidad que ella definió</li>
+            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Califica prospectos automáticamente: quién vale la pena perseguir y quién no</li>
+            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Entrena empleados nuevos en 2 días en lugar de 2 semanas</li>
           </ul>
           <div style="padding:16px; background:var(--bg-primary); border-radius:10px; border-left:3px solid var(--coral);">
-            <p style="font-size:14px; font-weight:700; color:var(--text-primary); margin-bottom:4px;">Resultado:</p>
-            <p style="font-size:14px;">Ella dejó de ser quien aprueba cada cosa. Su equipo trabaja con más autonomía. Y ella recuperó <strong>12 horas semanales</strong> que ahora dedica a clientes de alto valor.</p>
+            <p style="font-size:15px; font-weight:700; color:var(--text-primary); margin-bottom:4px;">Resultado:</p>
+            <p style="font-size:15px;">Ella dejó de ser quien aprueba cada cosa. Su equipo trabaja con más autonomía. Y ella recuperó <strong>12 horas semanales</strong> que ahora dedica a clientes de alto valor.</p>
           </div>
         </div>
         <div class="card">
@@ -231,16 +232,16 @@ import Layout from '../layouts/Layout.astro';
             <div style="width:40px; height:40px; border-radius:50%; background:var(--coral-subtle); border:1px solid var(--coral-border); display:flex; align-items:center; justify-content:center; color:var(--coral); font-weight:800; font-size:14px; flex-shrink:0;">C</div>
             <p style="font-size:12px; color:var(--text-secondary); font-weight:700; text-transform:uppercase; letter-spacing:1px;">Negocio de instalaciones residenciales</p>
           </div>
-          <p style="color:var(--text-secondary); font-size:14px; margin-bottom:16px;">Un negocio de instalaciones residenciales pagaba $250/mes en herramientas (Canva, banco de imágenes, programador de posts, herramienta de propuestas). Le configuré un sistema que:</p>
+          <p style="color:var(--text-secondary); font-size:15px; margin-bottom:16px;">Un negocio de instalaciones residenciales pagaba $250/mes en herramientas (Canva, banco de imágenes, programador de posts, herramienta de propuestas). Le configuré un sistema que:</p>
           <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; margin-bottom:20px;">
-            <li style="display:flex; gap:10px; font-size:14px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Genera cotizaciones profesionales en minutos con su formato y sus precios</li>
-            <li style="display:flex; gap:10px; font-size:14px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Crea contenido para redes con fotos de sus propios trabajos + textos en su voz</li>
-            <li style="display:flex; gap:10px; font-size:14px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Manda seguimiento automático a clientes que pidieron cotización y no respondieron</li>
-            <li style="display:flex; gap:10px; font-size:14px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Genera reportes semanales de cuántas cotizaciones salieron, cuántas cerraron, cuántas están pendientes</li>
+            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Genera cotizaciones profesionales en minutos con su formato y sus precios</li>
+            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Crea contenido para redes con fotos de sus propios trabajos + textos en su voz</li>
+            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Manda seguimiento automático a clientes que pidieron cotización y no respondieron</li>
+            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Genera reportes semanales de cuántas cotizaciones salieron, cuántas cerraron, cuántas están pendientes</li>
           </ul>
           <div style="padding:16px; background:var(--bg-primary); border-radius:10px; border-left:3px solid var(--coral);">
-            <p style="font-size:14px; font-weight:700; color:var(--text-primary); margin-bottom:4px;">Resultado:</p>
-            <p style="font-size:14px;">Canceló 4 suscripciones. Ahorra <strong>$200/mes</strong>. Pero lo que más le importó: las cotizaciones que antes tardaban 45 minutos ahora salen en 5. Y el seguimiento que nunca hacía (por falta de tiempo) ahora sale solo.</p>
+            <p style="font-size:15px; font-weight:700; color:var(--text-primary); margin-bottom:4px;">Resultado:</p>
+            <p style="font-size:15px;">Canceló 4 suscripciones. Ahorra <strong>$200/mes</strong>. Pero lo que más le importó: las cotizaciones que antes tardaban 45 minutos ahora salen en 5. Y el seguimiento que nunca hacía (por falta de tiempo) ahora sale solo.</p>
           </div>
         </div>
       </div>
@@ -337,13 +338,13 @@ import Layout from '../layouts/Layout.astro';
           <p>No. Y es importante que entiendas la diferencia, porque de eso depende que puedas cobrar los precios que cobras, que tu contenido no se vea "hecho por IA", y que tu competencia no entienda qué estás haciendo diferente.</p>
         </div>
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:32px;">
-          <div class="card">
+          <div class="card" style="background:rgba(239,68,68,0.04); border:1px solid rgba(239,68,68,0.12);">
             <p style="color:var(--text-tertiary); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:12px;">Un chatbot</p>
-            <p style="color:var(--text-secondary); font-size:14px; line-height:1.7;">Es una caja que responde preguntas predefinidas. Lo tiene todo el mundo. Es genérico. Se nota a kilómetros.</p>
+            <p style="color:var(--text-secondary); font-size:15px; line-height:1.7;">Es una caja que responde preguntas predefinidas. Lo tiene todo el mundo. Es genérico. Se nota a kilómetros.</p>
           </div>
-          <div class="card" style="background:var(--coral-bg-selected); border-color:var(--coral-border);">
+          <div class="card" style="background:var(--coral-bg-selected); border:1px solid var(--coral-border); box-shadow:0 0 24px rgba(244,132,95,0.12), 0 8px 32px rgba(0,0,0,0.25);">
             <p style="color:var(--coral); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:12px;">Lo que yo construyo</p>
-            <p style="color:var(--text-body); font-size:14px; line-height:1.7;">Un sistema de inteligencia artificial que ha absorbido el conocimiento de TU negocio — tu marca, tus clientes, tus procesos, tu forma de tomar decisiones — y que produce resultados que parecen venir de alguien de tu equipo, no de una máquina.</p>
+            <p style="color:var(--text-body); font-size:15px; line-height:1.7;">Un sistema de inteligencia artificial que ha absorbido el conocimiento de TU negocio — tu marca, tus clientes, tus procesos, tu forma de tomar decisiones — y que produce resultados que parecen venir de alguien de tu equipo, no de una máquina.</p>
           </div>
         </div>
         <div class="prose" style="margin-bottom:32px;">
@@ -393,41 +394,41 @@ import Layout from '../layouts/Layout.astro';
         <h2>De "no sé por dónde empezar" a "esto ya está trabajando por mí" en 2-4 semanas.</h2>
       </div>
       <div style="display:flex; flex-direction:column; gap:0; max-width:680px; margin:0 auto;">
-        <div style="display:flex; gap:20px; align-items:flex-start; padding-bottom:32px; position:relative;">
-          <div style="flex-shrink:0; width:40px; height:40px; border-radius:50%; background:linear-gradient(135deg,#F4845F,#e06b42); display:flex; align-items:center; justify-content:center; color:white; font-weight:800; font-size:14px; box-shadow:var(--shadow-cta); position:relative; z-index:1;">1</div>
-          <div style="position:absolute; left:19px; top:40px; bottom:0; width:2px; background:var(--border-subtle);"></div>
-          <div style="padding-top:8px;">
+        <div style="display:flex; gap:24px; align-items:flex-start; padding-bottom:44px; position:relative;">
+          <div style="flex-shrink:0; width:48px; height:48px; border-radius:50%; background:linear-gradient(135deg,#F4845F,#e06b42); display:flex; align-items:center; justify-content:center; color:white; font-weight:800; font-size:16px; box-shadow:var(--shadow-cta); position:relative; z-index:1;">1</div>
+          <div style="position:absolute; left:23px; top:48px; bottom:0; width:2px; background:var(--border-subtle);"></div>
+          <div style="padding-top:12px;">
             <h3 style="margin-bottom:8px;">Diagnóstico Gratuito <span style="color:var(--text-tertiary); font-weight:400; font-size:14px;">(5 minutos)</span></h3>
             <p style="color:var(--text-secondary); font-size:15px;">Respondes 10 preguntas sobre tu negocio. Recibes un reporte automático con las 3 áreas de mayor impacto para IA en tu caso. Sin compromiso.</p>
           </div>
         </div>
-        <div style="display:flex; gap:20px; align-items:flex-start; padding-bottom:32px; position:relative;">
-          <div style="flex-shrink:0; width:40px; height:40px; border-radius:50%; background:var(--bg-card); border:2px solid var(--border-default); display:flex; align-items:center; justify-content:center; color:var(--text-secondary); font-weight:800; font-size:14px; position:relative; z-index:1;">2</div>
-          <div style="position:absolute; left:19px; top:40px; bottom:0; width:2px; background:var(--border-subtle);"></div>
-          <div style="padding-top:8px;">
+        <div style="display:flex; gap:24px; align-items:flex-start; padding-bottom:44px; position:relative;">
+          <div style="flex-shrink:0; width:48px; height:48px; border-radius:50%; background:var(--bg-card); border:2px solid var(--border-default); display:flex; align-items:center; justify-content:center; color:var(--text-secondary); font-weight:800; font-size:16px; position:relative; z-index:1;">2</div>
+          <div style="position:absolute; left:23px; top:48px; bottom:0; width:2px; background:var(--border-subtle);"></div>
+          <div style="padding-top:12px;">
             <h3 style="margin-bottom:8px;">Me cuentas cómo funciona tu negocio <span style="color:var(--text-tertiary); font-weight:400; font-size:14px;">(a tu ritmo)</span></h3>
             <p style="color:var(--text-secondary); font-size:15px;">Si quieres avanzar, te envío un formulario detallado que llenas cuando puedas. Me compartes ejemplos de tu comunicación, tus procesos, tus clientes. Todo asíncrono — sin videollamadas interminables, respetando tu tiempo.</p>
           </div>
         </div>
-        <div style="display:flex; gap:20px; align-items:flex-start; padding-bottom:32px; position:relative;">
-          <div style="flex-shrink:0; width:40px; height:40px; border-radius:50%; background:var(--bg-card); border:2px solid var(--border-default); display:flex; align-items:center; justify-content:center; color:var(--text-secondary); font-weight:800; font-size:14px; position:relative; z-index:1;">3</div>
-          <div style="position:absolute; left:19px; top:40px; bottom:0; width:2px; background:var(--border-subtle);"></div>
-          <div style="padding-top:8px;">
+        <div style="display:flex; gap:24px; align-items:flex-start; padding-bottom:44px; position:relative;">
+          <div style="flex-shrink:0; width:48px; height:48px; border-radius:50%; background:var(--bg-card); border:2px solid var(--border-default); display:flex; align-items:center; justify-content:center; color:var(--text-secondary); font-weight:800; font-size:16px; position:relative; z-index:1;">3</div>
+          <div style="position:absolute; left:23px; top:48px; bottom:0; width:2px; background:var(--border-subtle);"></div>
+          <div style="padding-top:12px;">
             <h3 style="margin-bottom:8px;">Tu Primera Jugada <span style="color:var(--coral); font-weight:700;">— $497</span></h3>
             <p style="color:var(--text-secondary); font-size:15px;">Con la información que me diste, yo ya analicé tu negocio y ya construí un primer sistema para ti. En una videollamada de 60 minutos te presento el diagnóstico, te muestro tu sistema funcionando en vivo, y te entrego las llaves. Si decides avanzar con la implementación completa, los $497 se descuentan del precio total. <em>(Más detalles abajo.)</em></p>
           </div>
         </div>
-        <div style="display:flex; gap:20px; align-items:flex-start; padding-bottom:32px; position:relative;">
-          <div style="flex-shrink:0; width:40px; height:40px; border-radius:50%; background:var(--bg-card); border:2px solid var(--border-default); display:flex; align-items:center; justify-content:center; color:var(--text-secondary); font-weight:800; font-size:14px; position:relative; z-index:1;">4</div>
-          <div style="position:absolute; left:19px; top:40px; bottom:0; width:2px; background:var(--border-subtle);"></div>
-          <div style="padding-top:8px;">
+        <div style="display:flex; gap:24px; align-items:flex-start; padding-bottom:44px; position:relative;">
+          <div style="flex-shrink:0; width:48px; height:48px; border-radius:50%; background:var(--bg-card); border:2px solid var(--border-default); display:flex; align-items:center; justify-content:center; color:var(--text-secondary); font-weight:800; font-size:16px; position:relative; z-index:1;">4</div>
+          <div style="position:absolute; left:23px; top:48px; bottom:0; width:2px; background:var(--border-subtle);"></div>
+          <div style="padding-top:12px;">
             <h3 style="margin-bottom:8px;">Implementación completa <span style="color:var(--text-tertiary); font-weight:400; font-size:14px;">(si decides avanzar) — 2-4 semanas</span></h3>
             <p style="color:var(--text-secondary); font-size:15px;">Con el diagnóstico validado, construyo el sistema completo. A mitad de camino te muestro el avance en un video corto. Me das feedback por WhatsApp o audio. Ajusto. Entrego.</p>
           </div>
         </div>
-        <div style="display:flex; gap:20px; align-items:flex-start;">
-          <div style="flex-shrink:0; width:40px; height:40px; border-radius:50%; background:var(--bg-card); border:2px solid var(--border-default); display:flex; align-items:center; justify-content:center; color:var(--text-secondary); font-weight:800; font-size:14px;">5</div>
-          <div style="padding-top:8px;">
+        <div style="display:flex; gap:24px; align-items:flex-start;">
+          <div style="flex-shrink:0; width:48px; height:48px; border-radius:50%; background:var(--bg-card); border:2px solid var(--border-default); display:flex; align-items:center; justify-content:center; color:var(--text-secondary); font-weight:800; font-size:16px;">5</div>
+          <div style="padding-top:12px;">
             <h3 style="margin-bottom:8px;">Tú lo usas. Yo lo afino.</h3>
             <p style="color:var(--text-secondary); font-size:15px;">Recibes tu sistema completo funcionando + guía paso a paso. Durante todo el proyecto tienes soporte directo por WhatsApp. Y durante las primeras semanas de uso, vamos afinándolo para que cada vez funcione mejor.</p>
           </div>
