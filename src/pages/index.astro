@@ -5,8 +5,11 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
 
   <!-- BLOQUE 1: HERO -->
-  <section style="padding: clamp(80px,12vw,140px) 0 clamp(60px,10vw,100px);">
-    <div class="container">
+  <section style="padding: clamp(80px,12vw,140px) 0 clamp(60px,10vw,100px); position:relative; overflow:hidden;">
+    <!-- Atmospheric glow orbs -->
+    <div style="position:absolute;width:700px;height:700px;left:-200px;top:-250px;background:radial-gradient(circle,rgba(244,132,95,0.1) 0%,transparent 65%);pointer-events:none;z-index:0;" aria-hidden="true"></div>
+    <div style="position:absolute;width:600px;height:600px;right:-150px;top:-100px;background:radial-gradient(circle,rgba(30,58,95,0.3) 0%,transparent 65%);pointer-events:none;z-index:0;" aria-hidden="true"></div>
+    <div class="container" style="position:relative; z-index:1;">
       <div class="hero-grid">
         <div class="hero-text">
           <span class="badge animate-in" style="margin-bottom:24px; display:inline-block;">SISTEMAS DE IA PERSONALIZADOS</span>
@@ -31,7 +34,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
       </div>
-    </div>
+    </div><!-- /container z-index:1 -->
   </section>
 
   <!-- BLOQUE 2: EL PROBLEMA -->
@@ -118,6 +121,32 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- BLOQUE 4B: EL NIVEL MÍNIMO SUBIÓ -->
+  <section style="background:var(--bg-primary);">
+    <div class="container">
+      <div class="container-narrow" style="padding:0;">
+        <span class="badge" style="margin-bottom:20px; display:inline-block;">EL NUEVO ESTÁNDAR</span>
+        <h2 style="margin-bottom:24px;">La IA no solo te ahorra tiempo. Elimina tus debilidades.</h2>
+        <div class="prose" style="margin-bottom:32px;">
+          <p>Seamos honestos: nadie es bueno en todo.</p>
+          <p>Quizás eres excelente cerrando ventas en persona, pero tus emails suenan fríos y torpes. Quizás tu servicio es increíble, pero tus publicaciones en redes se ven amateur. Quizás sabes exactamente lo que quieres decir, pero cuando lo escribes no suena como esperabas.</p>
+          <p>Antes, podías sobrevivir con esas debilidades. Un email mediocre se perdía entre 50 emails mediocres. Un post feo pasaba desapercibido.</p>
+          <p style="color:var(--text-primary); font-weight:700;">Ya no.</p>
+          <p>Porque ahora tu competencia — quiera o no, sepa o no — está usando herramientas que suben su nivel. Sus emails suenan mejor. Sus propuestas se ven más profesionales. Su contenido sale más rápido y con mejor calidad.</p>
+          <p>Y lo mediocre se nota más que nunca.</p>
+        </div>
+        <div style="padding:28px 32px; border-radius:16px; border-left:4px solid var(--coral); background:var(--bg-card); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); margin-bottom:32px;">
+          <p style="color:var(--text-primary); font-weight:700; font-size:1.05rem; margin-bottom:12px;"><strong>Lo que hace un sistema de IA personalizado es eliminar el piso.</strong> No importa si no eres buen escritor — el sistema escribe bien por ti. No importa si no sabes de diseño — el sistema genera imágenes profesionales en tu estilo. No importa si no sabes hacer propuestas bonitas — el sistema las produce con tu formato, tu marca, y un nivel que impresiona.</p>
+        </div>
+        <div style="text-align:center; padding:32px; border-radius:16px; background:var(--coral-subtle); border:1px solid var(--coral-border);">
+          <p style="color:var(--text-primary); font-weight:700; font-size:clamp(1rem,2.5vw,1.15rem); margin-bottom:16px;">Tu peor día con IA es mejor que tu mejor día sin ella.</p>
+          <p style="color:var(--text-secondary); font-size:15px;">Y esto no es una ventaja opcional. <strong>Es el nuevo estándar.</strong> Los negocios que no suban su nivel mínimo van a quedar atrás — no por falta de talento, sino porque la calidad que antes era "suficiente" ya no lo es.</p>
+          <p style="color:var(--text-secondary); font-size:15px; margin-top:12px;">La pregunta no es si puedes permitirte invertir en esto. La pregunta es si puedes permitirte no hacerlo mientras tu competencia sí lo hace.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- BLOQUE 5: CASOS REALES -->
   <section id="ejemplos">
     <div class="container">
@@ -128,7 +157,18 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div style="display:grid; gap:24px;" class="cases-grid">
         <div class="card">
-          <div style="font-size:24px; margin-bottom:8px;">🎯</div>
+          <div class="chat-mockup">
+            <div class="chat-header">
+              <span class="chat-dot chat-dot-red"></span>
+              <span class="chat-dot chat-dot-yellow"></span>
+              <span class="chat-dot chat-dot-green"></span>
+              <span class="chat-header-label">Sistema IA — Coach</span>
+            </div>
+            <div class="chat-messages">
+              <div class="chat-msg user-msg">Escríbeme un post sobre el miedo al fracaso para mis seguidores</div>
+              <div class="chat-msg ai-msg">En 7 años como coach vi un patrón: los empresarios que más crecen son los que aprenden a convertir el fracaso en combustible. Hoy quiero contarte...</div>
+            </div>
+          </div>
           <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
             <div style="width:40px; height:40px; border-radius:50%; background:var(--coral-subtle); border:1px solid var(--coral-border); display:flex; align-items:center; justify-content:center; color:var(--coral); font-weight:800; font-size:14px; flex-shrink:0;">A</div>
             <p style="font-size:12px; color:var(--text-secondary); font-weight:700; text-transform:uppercase; letter-spacing:1px;">Coach de negocios · Bogotá</p>
@@ -146,7 +186,18 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
         <div class="card">
-          <div style="font-size:24px; margin-bottom:8px;">💼</div>
+          <div class="chat-mockup">
+            <div class="chat-header">
+              <span class="chat-dot chat-dot-red"></span>
+              <span class="chat-dot chat-dot-yellow"></span>
+              <span class="chat-dot chat-dot-green"></span>
+              <span class="chat-header-label">Sistema IA — Consultora</span>
+            </div>
+            <div class="chat-messages">
+              <div class="chat-msg user-msg">¿Esta propuesta está lista para enviarle al cliente?</div>
+              <div class="chat-msg ai-msg">Revisé la propuesta. Punto fuerte: la sección de ROI es sólida. Sugerencia: en la página 2, el plazo de implementación puede generar objeciones — te recomiendo agregar un desglose por fases.</div>
+            </div>
+          </div>
           <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
             <div style="width:40px; height:40px; border-radius:50%; background:var(--coral-subtle); border:1px solid var(--coral-border); display:flex; align-items:center; justify-content:center; color:var(--coral); font-weight:800; font-size:14px; flex-shrink:0;">B</div>
             <p style="font-size:12px; color:var(--text-secondary); font-weight:700; text-transform:uppercase; letter-spacing:1px;">Consultora financiera · 8 empleados</p>
@@ -164,7 +215,18 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
         <div class="card">
-          <div style="font-size:24px; margin-bottom:8px;">🔧</div>
+          <div class="chat-mockup">
+            <div class="chat-header">
+              <span class="chat-dot chat-dot-red"></span>
+              <span class="chat-dot chat-dot-yellow"></span>
+              <span class="chat-dot chat-dot-green"></span>
+              <span class="chat-header-label">Sistema IA — Instalaciones</span>
+            </div>
+            <div class="chat-messages">
+              <div class="chat-msg user-msg">Cotización instalación eléctrica apartamento 120m²</div>
+              <div class="chat-msg ai-msg">Cotización #089 generada. Total estimado: $2,850. Incluye materiales + mano de obra. Tiempo de ejecución: 3 días hábiles. ¿Envío al cliente o ajusto algún ítem?</div>
+            </div>
+          </div>
           <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
             <div style="width:40px; height:40px; border-radius:50%; background:var(--coral-subtle); border:1px solid var(--coral-border); display:flex; align-items:center; justify-content:center; color:var(--coral); font-weight:800; font-size:14px; flex-shrink:0;">C</div>
             <p style="font-size:12px; color:var(--text-secondary); font-weight:700; text-transform:uppercase; letter-spacing:1px;">Negocio de instalaciones residenciales</p>
@@ -473,8 +535,9 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- BLOQUE 12: CTA FINAL -->
-  <section style="background:var(--bg-primary);">
-    <div class="container">
+  <section style="background:var(--bg-primary); position:relative; overflow:hidden;">
+    <div style="position:absolute;width:800px;height:400px;left:50%;top:50%;transform:translate(-50%,-50%);background:radial-gradient(ellipse,rgba(244,132,95,0.09) 0%,transparent 70%);pointer-events:none;z-index:0;" aria-hidden="true"></div>
+    <div class="container" style="position:relative; z-index:1;">
       <div style="text-align:center; max-width:680px; margin:0 auto;">
         <div class="divider" style="margin-bottom:40px;"></div>
         <span class="badge" style="margin-bottom:24px; display:inline-block;">EMPIEZA HOY</span>
@@ -486,7 +549,7 @@ import Layout from '../layouts/Layout.astro';
           <p style="font-size:13px; color:var(--text-tertiary);">Incluye diagnóstico + plan + un primer sistema ya funcionando para tu negocio.</p>
         </div>
       </div>
-    </div>
+    </div><!-- /container z-index:1 -->
   </section>
 
 </Layout>
