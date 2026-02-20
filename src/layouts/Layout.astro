@@ -43,11 +43,30 @@ const {
     <!-- Sticky bar -->
     <div class="sticky-bar">
       <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:16px;">
-        <span style="color:var(--text-secondary); font-size:13px; font-weight:600;">
-          AgentesParaTuNegocio.com
-        </span>
+        <!-- Logo -->
+        <a href="/" style="display:flex; align-items:center; gap:10px; text-decoration:none; flex-shrink:0;">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Hexagon background -->
+            <path d="M16 2L28.7 9.5V24.5L16 32L3.3 24.5V9.5Z" fill="url(#logoGrad)"/>
+            <!-- Inner glow ring -->
+            <path d="M16 5L26.2 11V23L16 29L5.8 23V11Z" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+            <!-- Letter A -->
+            <text x="16" y="22.5" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="800" fill="white" text-anchor="middle" letter-spacing="-0.5">A</text>
+            <!-- Coral dot (agent node) -->
+            <circle cx="21.5" cy="10.5" r="2.5" fill="#F4845F"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="3.3" y1="2" x2="28.7" y2="32" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#1e2d45"/>
+                <stop offset="100%" stop-color="#0f172a"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span style="display:flex; flex-direction:column; line-height:1.1;">
+            <span style="color:var(--text-primary); font-weight:700; font-size:13px; letter-spacing:-0.01em; white-space:nowrap;">Agentes Para Tu Negocio<span style="color:var(--coral);">.com</span></span>
+          </span>
+        </a>
         <nav class="desktop-nav" style="display:none; gap:28px; align-items:center;">
-          <a href="/#ejemplos" style="color:var(--text-secondary); font-size:14px; font-weight:500; text-decoration:none;">Ejemplos</a>
+          <a href="/ejemplos" style="color:var(--text-secondary); font-size:14px; font-weight:500; text-decoration:none;">Ejemplos</a>
           <a href="/#proceso" style="color:var(--text-secondary); font-size:14px; font-weight:500; text-decoration:none;">Cómo Funciona</a>
           <a href="/#primera-jugada" style="color:var(--text-secondary); font-size:14px; font-weight:500; text-decoration:none;">Tu Primera Jugada</a>
         </nav>
