@@ -6,9 +6,7 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- BLOQUE 1: HERO -->
   <section style="padding: clamp(80px,12vw,140px) 0 clamp(60px,10vw,100px); position:relative; overflow:hidden;">
-    <!-- Atmospheric glow orbs -->
-    <div style="position:absolute;width:700px;height:700px;left:-200px;top:-250px;background:radial-gradient(circle,rgba(244,132,95,0.1) 0%,transparent 65%);pointer-events:none;z-index:0;" aria-hidden="true"></div>
-    <div style="position:absolute;width:600px;height:600px;right:-150px;top:-100px;background:radial-gradient(circle,rgba(30,58,95,0.3) 0%,transparent 65%);pointer-events:none;z-index:0;" aria-hidden="true"></div>
+    <div class="aurora" aria-hidden="true"></div>
     <div class="container" style="position:relative; z-index:1;">
       <div class="hero-grid">
         <div class="hero-text">
@@ -41,7 +39,7 @@ import Layout from '../layouts/Layout.astro';
   <!-- BLOQUE 2: EL PROBLEMA -->
   <section style="background:var(--bg-primary);">
     <div class="container">
-      <div class="container-narrow" style="padding:0;">
+      <div class="container-narrow" style="padding:0;" data-reveal>
         <span class="badge" style="margin-bottom:20px; display:inline-block;">EL PROBLEMA</span>
         <h2 style="margin-bottom:24px;">Todos están usando inteligencia artificial. Casi nadie la está usando bien.</h2>
         <div class="prose" style="line-height:1.8;">
@@ -60,7 +58,7 @@ import Layout from '../layouts/Layout.astro';
   <section>
     <div class="container">
       <div style="max-width:860px; margin:0 auto;">
-        <div style="display:grid; gap:40px; align-items:center;" class="analogy-grid">
+        <div style="display:grid; gap:40px; align-items:center;" class="analogy-grid" data-reveal>
           <div>
             <span class="badge" style="margin-bottom:20px; display:inline-block;">LA DIFERENCIA</span>
             <h2 style="margin-bottom:24px;">Un traje a la medida vs. uno de tienda.</h2>
@@ -92,7 +90,7 @@ import Layout from '../layouts/Layout.astro';
   <!-- BLOQUE 4: LA SOLUCIÓN -->
   <section style="background:var(--bg-secondary);">
     <div class="container">
-      <div class="container-narrow" style="padding:0;">
+      <div class="container-narrow" style="padding:0;" data-reveal>
         <span class="badge" style="margin-bottom:20px; display:inline-block;">LA SOLUCIÓN</span>
         <h2 style="margin-bottom:32px;">¿Qué significa tener IA a la medida de tu negocio?</h2>
         <div class="prose" style="margin-bottom:32px;">
@@ -125,7 +123,7 @@ import Layout from '../layouts/Layout.astro';
   <!-- BLOQUE 4B: EL NIVEL MÍNIMO SUBIÓ -->
   <section style="background:var(--bg-primary);">
     <div class="container">
-      <div class="container-narrow" style="padding:0;">
+      <div class="container-narrow" style="padding:0;" data-reveal>
         <span class="badge" style="margin-bottom:20px; display:inline-block;">EL NUEVO ESTÁNDAR</span>
         <h2 style="margin-bottom:24px;">La IA no solo te ahorra tiempo. Elimina tus debilidades.</h2>
         <div class="prose" style="margin-bottom:32px;">
@@ -156,7 +154,7 @@ import Layout from '../layouts/Layout.astro';
         <h2>Cada negocio es diferente. Por eso cada sistema es diferente.</h2>
         <p style="color:var(--text-secondary); margin-top:12px; max-width:580px; margin-left:auto; margin-right:auto;">No vendo paquetes genéricos. Lo que construyo depende 100% de qué necesita tu negocio. Pero para que te hagas una idea, estos son ejemplos reales de lo que puedo configurar:</p>
       </div>
-      <div style="display:grid; gap:24px;" class="cases-grid">
+      <div style="display:grid; gap:24px;" class="cases-grid" data-reveal-stagger>
         <div class="card">
           <div class="chat-mockup">
             <div class="chat-header">
@@ -171,17 +169,17 @@ import Layout from '../layouts/Layout.astro';
             </div>
           </div>
           <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
-            <div style="width:40px; height:40px; border-radius:50%; background:var(--coral-subtle); border:1px solid var(--coral-border); display:flex; align-items:center; justify-content:center; color:var(--coral); font-weight:800; font-size:14px; flex-shrink:0;">A</div>
+            <div class="avatar-circle">A</div>
             <p style="font-size:12px; color:var(--text-secondary); font-weight:700; text-transform:uppercase; letter-spacing:1px;">Coach de negocios · Bogotá</p>
           </div>
           <p style="color:var(--text-secondary); font-size:15px; margin-bottom:16px;">Un coach de negocios en Bogotá pasaba 4 horas semanales solo escribiendo emails y posts. Le configuré un sistema que:</p>
-          <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; margin-bottom:20px;">
-            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Escribe borradores en su tono (él solo edita 15-20 minutos por pieza)</li>
-            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Conoce a sus 5 tipos de cliente ideal y adapta el mensaje para cada uno</li>
-            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Evalúa sus anuncios ANTES de publicarlos y le dice qué perfil de cliente va a resonar</li>
-            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Genera imágenes y videos cortos en su estilo visual sin tocar Canva ni Freepik</li>
+          <ul class="feature-list" style="margin-bottom:20px;">
+            <li><span class="arrow">→</span> Escribe borradores en su tono (él solo edita 15-20 minutos por pieza)</li>
+            <li><span class="arrow">→</span> Conoce a sus 5 tipos de cliente ideal y adapta el mensaje para cada uno</li>
+            <li><span class="arrow">→</span> Evalúa sus anuncios ANTES de publicarlos y le dice qué perfil de cliente va a resonar</li>
+            <li><span class="arrow">→</span> Genera imágenes y videos cortos en su estilo visual sin tocar Canva ni Freepik</li>
           </ul>
-          <div style="padding:16px; background:var(--bg-primary); border-radius:10px; border-left:3px solid var(--coral);">
+          <div class="result-callout">
             <p style="font-size:15px; font-weight:700; color:var(--text-primary); margin-bottom:4px;">Resultado:</p>
             <p style="font-size:15px;">De 4 horas creando contenido a <strong>45 minutos editando</strong>. Su contenido pasó de ser intermitente a ser consistente todas las semanas. Sus seguidores notan la diferencia — pero piensan que contrató a un equipo.</p>
           </div>
@@ -200,17 +198,17 @@ import Layout from '../layouts/Layout.astro';
             </div>
           </div>
           <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
-            <div style="width:40px; height:40px; border-radius:50%; background:var(--coral-subtle); border:1px solid var(--coral-border); display:flex; align-items:center; justify-content:center; color:var(--coral); font-weight:800; font-size:14px; flex-shrink:0;">B</div>
+            <div class="avatar-circle">B</div>
             <p style="font-size:12px; color:var(--text-secondary); font-weight:700; text-transform:uppercase; letter-spacing:1px;">Consultora financiera · 8 empleados</p>
           </div>
           <p style="color:var(--text-secondary); font-size:15px; margin-bottom:16px;">Una consultora financiera con 8 empleados era el cuello de botella de todo. Le configuré un sistema que:</p>
-          <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; margin-bottom:20px;">
-            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Responde las preguntas de su equipo como ella las respondería (procesos, políticas, criterios)</li>
-            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Revisa propuestas antes de enviarlas, usando los estándares de calidad que ella definió</li>
-            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Califica prospectos automáticamente: quién vale la pena perseguir y quién no</li>
-            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Entrena empleados nuevos en 2 días en lugar de 2 semanas</li>
+          <ul class="feature-list" style="margin-bottom:20px;">
+            <li><span class="arrow">→</span> Responde las preguntas de su equipo como ella las respondería (procesos, políticas, criterios)</li>
+            <li><span class="arrow">→</span> Revisa propuestas antes de enviarlas, usando los estándares de calidad que ella definió</li>
+            <li><span class="arrow">→</span> Califica prospectos automáticamente: quién vale la pena perseguir y quién no</li>
+            <li><span class="arrow">→</span> Entrena empleados nuevos en 2 días en lugar de 2 semanas</li>
           </ul>
-          <div style="padding:16px; background:var(--bg-primary); border-radius:10px; border-left:3px solid var(--coral);">
+          <div class="result-callout">
             <p style="font-size:15px; font-weight:700; color:var(--text-primary); margin-bottom:4px;">Resultado:</p>
             <p style="font-size:15px;">Ella dejó de ser quien aprueba cada cosa. Su equipo trabaja con más autonomía. Y ella recuperó <strong>12 horas semanales</strong> que ahora dedica a clientes de alto valor.</p>
           </div>
@@ -229,17 +227,17 @@ import Layout from '../layouts/Layout.astro';
             </div>
           </div>
           <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
-            <div style="width:40px; height:40px; border-radius:50%; background:var(--coral-subtle); border:1px solid var(--coral-border); display:flex; align-items:center; justify-content:center; color:var(--coral); font-weight:800; font-size:14px; flex-shrink:0;">C</div>
+            <div class="avatar-circle">C</div>
             <p style="font-size:12px; color:var(--text-secondary); font-weight:700; text-transform:uppercase; letter-spacing:1px;">Negocio de instalaciones residenciales</p>
           </div>
           <p style="color:var(--text-secondary); font-size:15px; margin-bottom:16px;">Un negocio de instalaciones residenciales pagaba $250/mes en herramientas (Canva, banco de imágenes, programador de posts, herramienta de propuestas). Le configuré un sistema que:</p>
-          <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; margin-bottom:20px;">
-            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Genera cotizaciones profesionales en minutos con su formato y sus precios</li>
-            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Crea contenido para redes con fotos de sus propios trabajos + textos en su voz</li>
-            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Manda seguimiento automático a clientes que pidieron cotización y no respondieron</li>
-            <li style="display:flex; gap:10px; font-size:15px;"><span style="color:var(--coral); flex-shrink:0;">→</span> Genera reportes semanales de cuántas cotizaciones salieron, cuántas cerraron, cuántas están pendientes</li>
+          <ul class="feature-list" style="margin-bottom:20px;">
+            <li><span class="arrow">→</span> Genera cotizaciones profesionales en minutos con su formato y sus precios</li>
+            <li><span class="arrow">→</span> Crea contenido para redes con fotos de sus propios trabajos + textos en su voz</li>
+            <li><span class="arrow">→</span> Manda seguimiento automático a clientes que pidieron cotización y no respondieron</li>
+            <li><span class="arrow">→</span> Genera reportes semanales de cuántas cotizaciones salieron, cuántas cerraron, cuántas están pendientes</li>
           </ul>
-          <div style="padding:16px; background:var(--bg-primary); border-radius:10px; border-left:3px solid var(--coral);">
+          <div class="result-callout">
             <p style="font-size:15px; font-weight:700; color:var(--text-primary); margin-bottom:4px;">Resultado:</p>
             <p style="font-size:15px;">Canceló 4 suscripciones. Ahorra <strong>$200/mes</strong>. Pero lo que más le importó: las cotizaciones que antes tardaban 45 minutos ahora salen en 5. Y el seguimiento que nunca hacía (por falta de tiempo) ahora sale solo.</p>
           </div>
@@ -302,7 +300,7 @@ import Layout from '../layouts/Layout.astro';
   <!-- BLOQUE 6: ALGO IMPORTANTE -->
   <section style="background:var(--bg-primary);">
     <div class="container">
-      <div class="container-narrow" style="padding:0;">
+      <div class="container-narrow" style="padding:0;" data-reveal>
         <span class="badge" style="margin-bottom:20px; display:inline-block;">ALGO IMPORTANTE</span>
         <h2 style="margin-bottom:24px;">El sistema funciona con la IA más potente del mercado. Y eso tiene un costo mensual.</h2>
         <div class="prose" style="margin-bottom:28px;">
@@ -331,7 +329,7 @@ import Layout from '../layouts/Layout.astro';
   <!-- BLOQUE 7: DIFERENCIADOR -->
   <section>
     <div class="container">
-      <div class="container-narrow" style="padding:0;">
+      <div class="container-narrow" style="padding:0;" data-reveal>
         <span class="badge" style="margin-bottom:20px; display:inline-block;">¿POR QUÉ ES DIFERENTE?</span>
         <h2 style="margin-bottom:24px;">"¿No es esto otro chatbot?"</h2>
         <div class="prose" style="margin-bottom:32px;">
@@ -361,7 +359,7 @@ import Layout from '../layouts/Layout.astro';
   <!-- BLOQUE 8: QUIÉN SOY -->
   <section style="background:var(--bg-primary);">
     <div class="container">
-      <div style="display:grid; gap:40px; align-items:center; max-width:860px; margin:0 auto;" class="about-grid">
+      <div style="display:grid; gap:40px; align-items:center; max-width:860px; margin:0 auto;" class="about-grid" data-reveal>
         <div style="text-align:center;">
           <div style="width:160px; height:160px; border-radius:50%; overflow:hidden; border:3px solid var(--coral-border); margin:0 auto 16px; box-shadow:0 0 32px var(--coral-glow);">
             <img src="/Casual.jpg" alt="Beto Inciarte" style="width:100%; height:100%; object-fit:cover;" />
@@ -393,9 +391,9 @@ import Layout from '../layouts/Layout.astro';
         <span class="badge" style="margin-bottom:20px; display:inline-block;">CÓMO FUNCIONA</span>
         <h2>De "no sé por dónde empezar" a "esto ya está trabajando por mí" en 2-4 semanas.</h2>
       </div>
-      <div style="display:flex; flex-direction:column; gap:0; max-width:680px; margin:0 auto;">
+      <div style="display:flex; flex-direction:column; gap:0; max-width:680px; margin:0 auto;" data-reveal>
         <div style="display:flex; gap:24px; align-items:flex-start; padding-bottom:44px; position:relative;">
-          <div style="flex-shrink:0; width:48px; height:48px; border-radius:50%; background:linear-gradient(135deg,#F4845F,#e06b42); display:flex; align-items:center; justify-content:center; color:white; font-weight:800; font-size:16px; box-shadow:var(--shadow-cta); position:relative; z-index:1;">1</div>
+          <div class="step-circle step-circle-active">1</div>
           <div style="position:absolute; left:23px; top:48px; bottom:0; width:2px; background:var(--border-subtle);"></div>
           <div style="padding-top:12px;">
             <h3 style="margin-bottom:8px;">Diagnóstico Gratuito <span style="color:var(--text-tertiary); font-weight:400; font-size:14px;">(5 minutos)</span></h3>
@@ -403,7 +401,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
         <div style="display:flex; gap:24px; align-items:flex-start; padding-bottom:44px; position:relative;">
-          <div style="flex-shrink:0; width:48px; height:48px; border-radius:50%; background:var(--bg-card); border:2px solid var(--border-default); display:flex; align-items:center; justify-content:center; color:var(--text-secondary); font-weight:800; font-size:16px; position:relative; z-index:1;">2</div>
+          <div class="step-circle step-circle-inactive">2</div>
           <div style="position:absolute; left:23px; top:48px; bottom:0; width:2px; background:var(--border-subtle);"></div>
           <div style="padding-top:12px;">
             <h3 style="margin-bottom:8px;">Me cuentas cómo funciona tu negocio <span style="color:var(--text-tertiary); font-weight:400; font-size:14px;">(a tu ritmo)</span></h3>
@@ -411,7 +409,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
         <div style="display:flex; gap:24px; align-items:flex-start; padding-bottom:44px; position:relative;">
-          <div style="flex-shrink:0; width:48px; height:48px; border-radius:50%; background:var(--bg-card); border:2px solid var(--border-default); display:flex; align-items:center; justify-content:center; color:var(--text-secondary); font-weight:800; font-size:16px; position:relative; z-index:1;">3</div>
+          <div class="step-circle step-circle-inactive">3</div>
           <div style="position:absolute; left:23px; top:48px; bottom:0; width:2px; background:var(--border-subtle);"></div>
           <div style="padding-top:12px;">
             <h3 style="margin-bottom:8px;">Tu Primera Jugada <span style="color:var(--coral); font-weight:700;">— $497</span></h3>
@@ -419,7 +417,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
         <div style="display:flex; gap:24px; align-items:flex-start; padding-bottom:44px; position:relative;">
-          <div style="flex-shrink:0; width:48px; height:48px; border-radius:50%; background:var(--bg-card); border:2px solid var(--border-default); display:flex; align-items:center; justify-content:center; color:var(--text-secondary); font-weight:800; font-size:16px; position:relative; z-index:1;">4</div>
+          <div class="step-circle step-circle-inactive">4</div>
           <div style="position:absolute; left:23px; top:48px; bottom:0; width:2px; background:var(--border-subtle);"></div>
           <div style="padding-top:12px;">
             <h3 style="margin-bottom:8px;">Implementación completa <span style="color:var(--text-tertiary); font-weight:400; font-size:14px;">(si decides avanzar) — 2-4 semanas</span></h3>
@@ -427,7 +425,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
         <div style="display:flex; gap:24px; align-items:flex-start;">
-          <div style="flex-shrink:0; width:48px; height:48px; border-radius:50%; background:var(--bg-card); border:2px solid var(--border-default); display:flex; align-items:center; justify-content:center; color:var(--text-secondary); font-weight:800; font-size:16px;">5</div>
+          <div class="step-circle step-circle-inactive">5</div>
           <div style="padding-top:12px;">
             <h3 style="margin-bottom:8px;">Tú lo usas. Yo lo afino.</h3>
             <p style="color:var(--text-secondary); font-size:15px;">Recibes tu sistema completo funcionando + guía paso a paso. Durante todo el proyecto tienes soporte directo por WhatsApp. Y durante las primeras semanas de uso, vamos afinándolo para que cada vez funcione mejor.</p>
@@ -441,7 +439,7 @@ import Layout from '../layouts/Layout.astro';
   <!-- BLOQUE 10: TU PRIMERA JUGADA -->
   <section id="primera-jugada" style="background: rgba(244, 132, 95, 0.03); border-top: 1px solid rgba(244, 132, 95, 0.15); border-bottom: 1px solid rgba(244, 132, 95, 0.15);">
     <div class="container">
-      <div class="container-narrow" style="padding:0;">
+      <div class="container-narrow" style="padding:0;" data-reveal>
         <span class="badge" style="margin-bottom:20px; display:inline-block;">TU PRIMERA JUGADA — $497</span>
         <h2 style="margin-bottom:16px;">$497 que se pagan solos — porque no te vas con un PDF. Te vas con algo funcionando.</h2>
         <div class="prose" style="margin-bottom:36px;">
@@ -518,18 +516,18 @@ import Layout from '../layouts/Layout.astro';
           <span class="badge" style="margin-bottom:20px; display:inline-block;">FAQ</span>
           <h2>Lo que siempre me preguntan.</h2>
         </div>
-        <div id="faq">
-          <details><summary>¿Necesito saber de tecnología para usar esto?</summary><p>No. Si sabes usar WhatsApp y escribir en una computadora, puedes usar el sistema. Viene con guía paso a paso y soporte directo por WhatsApp durante todo el proyecto.</p></details>
-          <details><summary>¿Tengo que pagar algo mensual para que funcione?</summary><p>Sí, y quiero ser transparente: los sistemas funcionan con Claude, que es la inteligencia artificial más avanzada del mercado. Necesitas una suscripción de $20/mes (uso básico) o $100/mes (uso intensivo). Es como la electricidad que hace funcionar la máquina — yo construyo la máquina, pero necesita energía. La buena noticia: esos $20-$100 reemplazan $200-$300 en otras herramientas que ya no vas a necesitar, y te ahorran 10-15 horas semanales.</p></details>
-          <details><summary>¿Por qué Claude y no ChatGPT?</summary><p>Puedes empezar con ChatGPT si quieres, pero cuando pruebes la diferencia en calidad vas a entender. No es un tema de costos — es un tema de resultados. Claude entiende instrucciones complejas de negocio de una forma que otros modelos simplemente no logran. Y cuando el objetivo es que tu sistema produzca resultados de nivel experto, la herramienta importa.</p></details>
-          <details><summary>¿Esto es un chatbot?</summary><p>No. Un chatbot responde preguntas predefinidas. Lo que yo construyo es un sistema inteligente que ha absorbido el conocimiento de tu negocio y produce resultados como si vinieran de alguien de tu equipo. Tu cliente no va a pensar "esto lo hizo un robot." Va a pensar "qué profesional."</p></details>
-          <details><summary>¿Qué pasa si la IA no escribe exactamente como yo?</summary><p>El sistema produce borradores al 85-90% de tu estilo. Tu rol es el de editor final — revisas, ajustas el toque personal, y listo. No reemplaza tu voz — la amplifica. En vez de 3 horas creando desde cero, son 15-20 minutos editando un borrador que ya suena como tú.</p></details>
-          <details><summary>¿Y si ya tengo equipo de marketing o expertos internos?</summary><p>Mejor aún. No reemplazo a tu equipo — lo potencio. Lo que hago es tomar el conocimiento que tienen en la cabeza y codificarlo en un sistema disponible 24/7. Tu gente sigue siendo la experta. El sistema se asegura de que ese expertise se aplique consistentemente, incluso cuando ellos no están.</p></details>
-          <details><summary>¿Y si ya uso ChatGPT para mi negocio?</summary><p>Perfecto, entonces ya sabes que la IA es útil pero también sabes que te da respuestas genéricas. Lo que yo configuro es un nivel completamente diferente: un sistema que ya tiene toda la información de tu negocio cargada. Es como la diferencia entre hablar con un desconocido que sabe de todo un poco, y hablar con alguien que conoce tu negocio desde adentro.</p></details>
-          <details><summary>¿Funciona para mi tipo de negocio?</summary><p>Si tu negocio involucra comunicarse con clientes, crear contenido, hacer propuestas, o gestionar procesos con un equipo, sí. He trabajado con consultorías, agencias, coaches, servicios profesionales (contadores, abogados), clínicas, e-commerce, negocios de instalaciones y servicios residenciales, y más. Cada sistema es diferente porque cada negocio es diferente.</p></details>
-          <details><summary>¿Cuánto de mi tiempo necesitas?</summary><p>Poco. Primero llenas un formulario a tu ritmo (~1-2 horas). Después una videollamada de 60 minutos donde ya te presento el diagnóstico y tu primer sistema funcionando. Si avanzas con la implementación completa, solo necesito feedback por WhatsApp cuando te muestre avances. Total: unas 3-5 horas de tu tiempo repartidas en 2-4 semanas. El resto lo hago yo.</p></details>
-          <details><summary>¿Puedo ver una demo antes de decidir?</summary><p>Sí. En mi <a href="https://youtube.com/@agentesparatunegocio" target="_blank" rel="noopener">canal de YouTube</a> publico demos de sistemas reales funcionando. Y en Tu Primera Jugada te entrego un primer sistema ya configurado para tu negocio — así no decides a ciegas.</p></details>
-          <details><summary>¿Hay soporte después de la entrega?</summary><p>Sí. Soporte asíncrono por WhatsApp durante toda la duración del proyecto (30-90 días según el servicio). Si después necesitas ajustes, nuevos sistemas, o mantenimiento continuo, hay un plan de evolución mensual opcional.</p></details>
+        <div id="faq" data-reveal>
+          <details><summary>¿Necesito saber de tecnología para usar esto?</summary><div class="faq-content"><div><p>No. Si sabes usar WhatsApp y escribir en una computadora, puedes usar el sistema. Viene con guía paso a paso y soporte directo por WhatsApp durante todo el proyecto.</p></div></div></details>
+          <details><summary>¿Tengo que pagar algo mensual para que funcione?</summary><div class="faq-content"><div><p>Sí, y quiero ser transparente: los sistemas funcionan con Claude, que es la inteligencia artificial más avanzada del mercado. Necesitas una suscripción de $20/mes (uso básico) o $100/mes (uso intensivo). Es como la electricidad que hace funcionar la máquina — yo construyo la máquina, pero necesita energía. La buena noticia: esos $20-$100 reemplazan $200-$300 en otras herramientas que ya no vas a necesitar, y te ahorran 10-15 horas semanales.</p></div></div></details>
+          <details><summary>¿Por qué Claude y no ChatGPT?</summary><div class="faq-content"><div><p>Puedes empezar con ChatGPT si quieres, pero cuando pruebes la diferencia en calidad vas a entender. No es un tema de costos — es un tema de resultados. Claude entiende instrucciones complejas de negocio de una forma que otros modelos simplemente no logran. Y cuando el objetivo es que tu sistema produzca resultados de nivel experto, la herramienta importa.</p></div></div></details>
+          <details><summary>¿Esto es un chatbot?</summary><div class="faq-content"><div><p>No. Un chatbot responde preguntas predefinidas. Lo que yo construyo es un sistema inteligente que ha absorbido el conocimiento de tu negocio y produce resultados como si vinieran de alguien de tu equipo. Tu cliente no va a pensar "esto lo hizo un robot." Va a pensar "qué profesional."</p></div></div></details>
+          <details><summary>¿Qué pasa si la IA no escribe exactamente como yo?</summary><div class="faq-content"><div><p>El sistema produce borradores al 85-90% de tu estilo. Tu rol es el de editor final — revisas, ajustas el toque personal, y listo. No reemplaza tu voz — la amplifica. En vez de 3 horas creando desde cero, son 15-20 minutos editando un borrador que ya suena como tú.</p></div></div></details>
+          <details><summary>¿Y si ya tengo equipo de marketing o expertos internos?</summary><div class="faq-content"><div><p>Mejor aún. No reemplazo a tu equipo — lo potencio. Lo que hago es tomar el conocimiento que tienen en la cabeza y codificarlo en un sistema disponible 24/7. Tu gente sigue siendo la experta. El sistema se asegura de que ese expertise se aplique consistentemente, incluso cuando ellos no están.</p></div></div></details>
+          <details><summary>¿Y si ya uso ChatGPT para mi negocio?</summary><div class="faq-content"><div><p>Perfecto, entonces ya sabes que la IA es útil pero también sabes que te da respuestas genéricas. Lo que yo configuro es un nivel completamente diferente: un sistema que ya tiene toda la información de tu negocio cargada. Es como la diferencia entre hablar con un desconocido que sabe de todo un poco, y hablar con alguien que conoce tu negocio desde adentro.</p></div></div></details>
+          <details><summary>¿Funciona para mi tipo de negocio?</summary><div class="faq-content"><div><p>Si tu negocio involucra comunicarse con clientes, crear contenido, hacer propuestas, o gestionar procesos con un equipo, sí. He trabajado con consultorías, agencias, coaches, servicios profesionales (contadores, abogados), clínicas, e-commerce, negocios de instalaciones y servicios residenciales, y más. Cada sistema es diferente porque cada negocio es diferente.</p></div></div></details>
+          <details><summary>¿Cuánto de mi tiempo necesitas?</summary><div class="faq-content"><div><p>Poco. Primero llenas un formulario a tu ritmo (~1-2 horas). Después una videollamada de 60 minutos donde ya te presento el diagnóstico y tu primer sistema funcionando. Si avanzas con la implementación completa, solo necesito feedback por WhatsApp cuando te muestre avances. Total: unas 3-5 horas de tu tiempo repartidas en 2-4 semanas. El resto lo hago yo.</p></div></div></details>
+          <details><summary>¿Puedo ver una demo antes de decidir?</summary><div class="faq-content"><div><p>Sí. En mi <a href="https://youtube.com/@agentesparatunegocio" target="_blank" rel="noopener">canal de YouTube</a> publico demos de sistemas reales funcionando. Y en Tu Primera Jugada te entrego un primer sistema ya configurado para tu negocio — así no decides a ciegas.</p></div></div></details>
+          <details><summary>¿Hay soporte después de la entrega?</summary><div class="faq-content"><div><p>Sí. Soporte asíncrono por WhatsApp durante toda la duración del proyecto (30-90 días según el servicio). Si después necesitas ajustes, nuevos sistemas, o mantenimiento continuo, hay un plan de evolución mensual opcional.</p></div></div></details>
         </div>
       </div>
     </div>
@@ -539,7 +537,7 @@ import Layout from '../layouts/Layout.astro';
   <section style="background:var(--bg-primary); position:relative; overflow:hidden;">
     <div style="position:absolute;width:800px;height:400px;left:50%;top:50%;transform:translate(-50%,-50%);background:radial-gradient(ellipse,rgba(244,132,95,0.09) 0%,transparent 70%);pointer-events:none;z-index:0;" aria-hidden="true"></div>
     <div class="container" style="position:relative; z-index:1;">
-      <div style="text-align:center; max-width:680px; margin:0 auto;">
+      <div style="text-align:center; max-width:680px; margin:0 auto;" data-reveal>
         <div class="divider" style="margin-bottom:40px;"></div>
         <span class="badge" style="margin-bottom:24px; display:inline-block;">EMPIEZA HOY</span>
         <h2 style="margin-bottom:20px;">Mientras tu competencia sigue usando IA genérica, tú puedes tener IA que realmente entienda tu negocio.</h2>
@@ -593,4 +591,7 @@ import Layout from '../layouts/Layout.astro';
   #faq details[open] summary::after { transform: rotate(45deg); }
   #faq details p { padding-bottom: 20px; color: var(--text-secondary); font-size: 15px; line-height: 1.7; }
   #faq details a { color: var(--coral); }
+  #faq details .faq-content { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
+  #faq details[open] .faq-content { grid-template-rows: 1fr; }
+  #faq details .faq-content > div { overflow: hidden; }
 </style>
