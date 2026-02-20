@@ -650,7 +650,7 @@ export default function Quiz() {
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12, alignItems: 'center' }}>
             <a
-              href="https://wa.me/message/TODO?text=Hola%20Beto%2C%20hice%20el%20diagn%C3%B3stico%20y%20quiero%20agendar%20Tu%20Primera%20Jugada."
+              href="https://wa.me/573160491337?text=Hola%20Beto%2C%20hice%20el%20diagn%C3%B3stico%20y%20quiero%20agendar%20Tu%20Primera%20Jugada."
               className="btn-primary"
               style={{ minWidth: 260 }}
               target="_blank"
@@ -659,7 +659,7 @@ export default function Quiz() {
               Agendar Tu Primera Jugada →
             </a>
             <a
-              href="https://wa.me/message/TODO?text=Hola%20Beto%2C%20hice%20el%20diagn%C3%B3stico%20y%20me%20interes%C3%B3."
+              href="https://wa.me/573160491337?text=Hola%20Beto%2C%20hice%20el%20diagn%C3%B3stico%20y%20me%20interes%C3%B3."
               className="btn-secondary"
               style={{ minWidth: 200 }}
               target="_blank"

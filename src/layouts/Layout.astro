@@ -43,12 +43,14 @@ const {
     <!-- Sticky bar -->
     <div class="sticky-bar">
       <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:16px;">
-        <span style="color:var(--text-secondary); font-size:13px; font-weight:500; display:none;" class="desktop-bar">
-          Tu competencia ya está usando IA. La pregunta es si tú la vas a usar mejor →
-        </span>
         <span style="color:var(--text-secondary); font-size:13px; font-weight:600;">
           AgentesParaTuNegocio.com
         </span>
+        <nav class="desktop-nav" style="display:none; gap:28px; align-items:center;">
+          <a href="/#ejemplos" style="color:var(--text-secondary); font-size:14px; font-weight:500; text-decoration:none;">Ejemplos</a>
+          <a href="/#proceso" style="color:var(--text-secondary); font-size:14px; font-weight:500; text-decoration:none;">Cómo Funciona</a>
+          <a href="/#primera-jugada" style="color:var(--text-secondary); font-size:14px; font-weight:500; text-decoration:none;">Tu Primera Jugada</a>
+        </nav>
         <a href="/quiz" class="btn-primary" style="padding:10px 20px; font-size:13px; font-weight:700;">
           Diagnóstico Gratuito →
         </a>
@@ -66,10 +68,10 @@ const {
           AgentesParaTuNegocio.com
         </p>
         <p style="font-size:13px; color:var(--text-tertiary); margin-bottom:20px;">
-          Una iniciativa de Humberto Inciarte
+          Una iniciativa de Humberto Inciarte | Creador de <a href="https://humbertoinciarte.com" target="_blank" rel="noopener" style="color:var(--text-tertiary);">Arquitectos de la Felicidad</a>
         </p>
         <div style="display:flex; justify-content:center; gap:24px; margin-bottom:24px;">
-          <a href="https://wa.me/message/TODO" style="color:var(--text-secondary); font-size:13px;">WhatsApp</a>
+          <a href="https://wa.me/573160491337" style="color:var(--text-secondary); font-size:13px;">WhatsApp</a>
           <a href="https://youtube.com/@agentesparatunegocio" style="color:var(--text-secondary); font-size:13px;">YouTube</a>
           <a href="https://instagram.com/agentesparatunegocio" style="color:var(--text-secondary); font-size:13px;">Instagram</a>
         </div>
@@ -81,7 +83,7 @@ const {
 
     <!-- WhatsApp float -->
     <a
-      href="https://wa.me/message/TODO?text=Hola%20Beto%2C%20quiero%20saber%20m%C3%A1s%20sobre%20los%20sistemas%20de%20IA%20para%20mi%20negocio."
+      href="https://wa.me/573160491337?text=Hola%20Beto%2C%20quiero%20saber%20m%C3%A1s%20sobre%20los%20sistemas%20de%20IA%20para%20mi%20negocio."
       class="whatsapp-float"
       target="_blank"
       rel="noopener noreferrer"
@@ -93,8 +95,8 @@ const {
     </a>
 
     <style>
-      @media (min-width: 640px) {
-        .desktop-bar { display: block !important; }
+      @media (min-width: 768px) {
+        .desktop-nav { display: flex !important; }
       }
     </style>
   </body>

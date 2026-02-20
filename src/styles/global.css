@@ -210,14 +210,14 @@ section {
   background: linear-gradient(135deg, #F4845F 0%, #e06b42 100%);
   color: white;
   border: none;
-  padding: 16px 40px;
+  padding: 18px 44px;
   border-radius: 12px;
   font-size: 16px;
   font-weight: 700;
   font-family: 'DM Sans', sans-serif;
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 0 4px 24px rgba(244, 132, 95, 0.25);
+  box-shadow: 0 6px 32px rgba(244, 132, 95, 0.35);
   letter-spacing: 0.01em;
   text-decoration: none;
 }
@@ -225,7 +225,7 @@ section {
 .btn-primary:hover {
   filter: brightness(1.05);
   transform: translateY(-1px);
-  box-shadow: 0 6px 28px rgba(244, 132, 95, 0.35);
+  box-shadow: 0 8px 40px rgba(244, 132, 95, 0.5);
   color: white;
 }
 
@@ -275,6 +275,10 @@ section {
   pointer-events: none;
   z-index: 0;
 }
+
+/* Prose — spacing for text-heavy sections */
+.prose p { margin-bottom: 1.4em; }
+.prose p:last-child { margin-bottom: 0; }
 
 /* Animaciones */
 @keyframes fadeInUp {
