@@ -246,29 +246,32 @@ import Layout from '../layouts/Layout.astro';
       <div style="text-align:center; margin-top:48px;">
         <p style="color:var(--text-secondary); margin-bottom:8px; font-size:15px;">¿Ves la diferencia? Un coach necesita algo totalmente distinto a una consultora financiera. Y los dos necesitan algo distinto a un negocio de instalaciones.</p>
         <p style="color:var(--text-secondary); margin-bottom:32px; font-size:15px;"><strong>Por eso no vendo "paquetes." Diagnostico qué necesitas y construyo exactamente eso.</strong></p>
-        <p style="color:var(--text-secondary); margin-bottom:16px; font-size:15px;">La inversión depende de la complejidad, pero el rango típico es:</p>
+        <p style="color:var(--text-secondary); margin-bottom:16px; font-size:15px;">La inversión depende de la complejidad:</p>
       </div>
       <!-- Pricing Table (desktop) -->
       <div style="overflow-x:auto; margin-bottom:16px;">
-        <div class="pricing-table" style="min-width:560px;">
+        <div class="pricing-table" style="min-width:640px;">
           <table>
             <thead>
-              <tr><th>Lo que necesitas</th><th>Inversión típica</th><th>Tiempo de entrega</th></tr>
+              <tr><th>Lo que necesitas</th><th>Inversión</th><th>Cuotas disponibles</th><th>Tiempo</th></tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>Sistema enfocado en un área (contenido, ventas, o operaciones)</strong></td>
-                <td style="color:var(--coral); font-weight:700;">$2,000 - $3,000</td>
+                <td><strong>Tu Sistema Starter</strong> — Un área de tu negocio sistematizada a fondo</td>
+                <td style="color:var(--coral); font-weight:700;">$997</td>
+                <td style="color:var(--text-secondary);">—</td>
                 <td style="color:var(--text-secondary);">2 semanas</td>
               </tr>
               <tr>
-                <td><strong>Sistema completo para varias áreas del negocio</strong></td>
-                <td style="color:var(--coral); font-weight:700;">$3,500 - $5,000</td>
+                <td><strong>Sistema Pro</strong> — Varias áreas del negocio trabajando juntas</td>
+                <td style="color:var(--coral); font-weight:700;">$2,500 - $5,000</td>
+                <td style="color:var(--text-secondary);">3 pagos mensuales</td>
                 <td style="color:var(--text-secondary);">3-4 semanas</td>
               </tr>
               <tr>
-                <td><strong>Sistema completo + herramientas de producción de contenido</strong></td>
+                <td><strong>Sistema Total</strong> — Transformación completa + producción de contenido</td>
                 <td style="color:var(--coral); font-weight:700;">$5,000 - $7,500</td>
+                <td style="color:var(--text-secondary);">3 pagos mensuales</td>
                 <td style="color:var(--text-secondary);">4-5 semanas</td>
               </tr>
             </tbody>
@@ -277,23 +280,23 @@ import Layout from '../layouts/Layout.astro';
         <!-- Pricing Cards (mobile) -->
         <div class="pricing-cards">
           <div class="card">
-            <p style="font-size:13px; font-weight:700; color:var(--text-primary); margin-bottom:6px;">Sistema enfocado en un área</p>
-            <p style="font-size:24px; font-weight:800; color:var(--coral); margin-bottom:4px;">$2,000 - $3,000</p>
+            <p style="font-size:14px; font-weight:700; color:var(--text-primary); margin-bottom:6px;">Tu Sistema Starter</p>
+            <p style="font-size:24px; font-weight:800; color:var(--coral); margin-bottom:4px;">$997</p>
             <p style="font-size:13px; color:var(--text-tertiary);">2 semanas</p>
           </div>
           <div class="card">
-            <p style="font-size:13px; font-weight:700; color:var(--text-primary); margin-bottom:6px;">Sistema completo para varias áreas</p>
-            <p style="font-size:24px; font-weight:800; color:var(--coral); margin-bottom:4px;">$3,500 - $5,000</p>
-            <p style="font-size:13px; color:var(--text-tertiary);">3-4 semanas</p>
+            <p style="font-size:14px; font-weight:700; color:var(--text-primary); margin-bottom:6px;">Sistema Pro</p>
+            <p style="font-size:24px; font-weight:800; color:var(--coral); margin-bottom:4px;">$2,500 - $5,000</p>
+            <p style="font-size:13px; color:var(--text-tertiary);">3-4 semanas · 3 pagos mensuales</p>
           </div>
           <div class="card">
-            <p style="font-size:13px; font-weight:700; color:var(--text-primary); margin-bottom:6px;">Sistema completo + producción de contenido</p>
+            <p style="font-size:14px; font-weight:700; color:var(--text-primary); margin-bottom:6px;">Sistema Total</p>
             <p style="font-size:24px; font-weight:800; color:var(--coral); margin-bottom:4px;">$5,000 - $7,500</p>
-            <p style="font-size:13px; color:var(--text-tertiary);">4-5 semanas</p>
+            <p style="font-size:13px; color:var(--text-tertiary);">4-5 semanas · 3 pagos mensuales</p>
           </div>
         </div>
       </div>
-      <p style="text-align:center; font-size:15px; color:var(--text-tertiary); font-style:italic;">Precio exacto después de Tu Primera Jugada. Todos son pagos únicos — no suscripciones.</p>
+      <p style="text-align:center; font-size:15px; color:var(--text-tertiary); font-style:italic;">Precio exacto después de Tu Primera Jugada. Los Sistemas Pro y Total tienen opción de pago en 3 cuotas para que el flujo de caja no sea obstáculo.</p>
     </div>
   </section>
 
@@ -356,8 +359,28 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- BLOQUE 8: QUIÉN SOY -->
+  <!-- BLOQUE 7B: MATANDO LA OBJECIÓN "LO HAGO YO MISMO" -->
   <section style="background:var(--bg-primary);">
+    <div class="container">
+      <div class="container-narrow" style="padding:0;" data-reveal>
+        <h2 style="margin-bottom:24px;">"¿Y si lo intento hacer yo mismo con tutoriales de YouTube?"</h2>
+        <div class="prose">
+          <p>Técnicamente, podrías. De la misma forma que técnicamente puedes aprender plomería en YouTube y arreglar las tuberías de tu casa tú mismo.</p>
+          <p>Pero ¿sabes qué va a pasar?</p>
+          <p>Vas a pasar 3 meses aprendiendo a medias lo que yo te configuro en 2 semanas. Vas a cometer errores que yo ya cometí. Vas a frustrarte cuando la IA te dé resultados genéricos y no sepas por qué. Y al final, vas a tener un sistema "frankenstein" que funciona al 40% de lo que podría haber sido.</p>
+          <p>Configurar IA para un negocio real no es solo saber "qué preguntarle." Es saber qué automatizar, en qué orden, cómo conectar las piezas, y cómo evitar que el sistema produzca cosas que dañen tu marca.</p>
+          <p>Yo tengo <strong>3 años estudiando programación a fondo y 15 años haciendo marketing de trincheras.</strong> He roto cosas y las he arreglado. He probado lo que funciona y descartado lo que no. Esa combinación exacta — técnica + negocio — es lo que hace que mis sistemas funcionen en el mundo real, no solo en los tutoriales.</p>
+          <p>Y mientras tú pasas 3 meses experimentando, ¿cuánto dejas de facturar? Si tu hora vale $50 y le dedicas 10 horas semanales a "aprender IA" durante 3 meses, acabas de gastar $6,000 en tiempo — más de lo que cuesta el sistema más completo que ofrezco. Y probablemente terminaste con algo que funciona a medias.</p>
+        </div>
+        <div style="text-align:center; padding:32px; border-radius:16px; border:1px solid var(--coral-border); background:var(--coral-subtle); margin-top:32px;">
+          <p style="color:var(--text-primary); font-size:clamp(1rem,2.5vw,1.15rem); font-weight:700; line-height:1.5;"><strong>La pregunta no es "¿puedo hacerlo yo?" La pregunta es "¿me conviene?"</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOQUE 8: QUIÉN SOY -->
+  <section>
     <div class="container">
       <div style="display:grid; gap:40px; align-items:center; max-width:860px; margin:0 auto;" class="about-grid" data-reveal>
         <div style="text-align:center;">
@@ -493,8 +516,9 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <h3 style="margin-bottom:16px;">¿Qué pasa después de Tu Primera Jugada?</h3>
         <div style="padding:24px; border-radius:14px; background:var(--bg-card); border:1px solid var(--border-subtle); margin-bottom:28px;">
-          <p style="font-size:15px; margin-bottom:10px;"><strong>Camino A:</strong> Decides implementar el sistema completo → Los $497 se descuentan del precio total. Ya tienes ventaja: el primer sistema entregado se integra con el resto.</p>
-          <p style="font-size:15px;"><strong>Camino B:</strong> No avanzas por ahora → Te quedas con el diagnóstico, el plan, y el sistema que ya te entregué. Todo eso ya vale mucho más de $497. Y cuando estés listo, vuelves.</p>
+          <p style="font-size:15px; margin-bottom:10px;"><strong>Camino A: Tu Sistema Starter ($997)</strong> → Tomas el sistema que te entregué y lo expandimos a un área completa de tu negocio. Ideal si quieres avanzar paso a paso. Los $497 se descuentan.</p>
+          <p style="font-size:15px; margin-bottom:10px;"><strong>Camino B: Sistema Pro o Total ($2,500+)</strong> → Vamos directo a sistematizar varias áreas o todo el negocio. Los $497 se descuentan. Opción de pago en 3 cuotas mensuales.</p>
+          <p style="font-size:15px;"><strong>Camino C: No avanzas por ahora</strong> → Te quedas con el diagnóstico, el plan, y el sistema que ya te entregué. Todo eso ya vale mucho más de $497. Y cuando estés listo, vuelves.</p>
         </div>
         <h3 style="margin-bottom:12px;">¿Por qué $497?</h3>
         <div class="prose" style="margin-bottom:28px;">

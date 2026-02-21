@@ -160,37 +160,41 @@ import Layout from '../layouts/Layout.astro';
       <div style="text-align:center; margin-bottom:40px;" data-reveal>
         <span class="badge" style="margin-bottom:20px; display:inline-block;">INVERSIÓN</span>
         <h2>¿Cuánto cuesta?</h2>
-        <p style="color:var(--text-secondary); margin-top:12px; max-width:480px; margin-left:auto; margin-right:auto;">La inversión depende de qué necesitas, pero este es el rango típico:</p>
+        <p style="color:var(--text-secondary); margin-top:12px; max-width:480px; margin-left:auto; margin-right:auto;">La inversión depende de qué necesitas:</p>
       </div>
 
       <!-- Pricing Table (desktop) -->
       <div style="overflow-x:auto; margin-bottom:24px;" data-reveal>
-        <div class="pricing-table" style="min-width:600px;">
+        <div class="pricing-table" style="min-width:700px;">
           <table>
             <thead>
               <tr>
-                <th>Complejidad</th>
-                <th>Rango de inversión</th>
+                <th>Lo que necesitas</th>
+                <th>Inversión</th>
+                <th>Cuotas disponibles</th>
                 <th>Tiempo</th>
                 <th>Ideal para...</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>Un área específica (contenido, ventas, o operaciones)</strong></td>
-                <td style="color:var(--coral); font-weight:700; white-space:nowrap;">$2,000 - $3,000</td>
+                <td><strong>Tu Sistema Starter</strong> — Un área específica sistematizada a fondo</td>
+                <td style="color:var(--coral); font-weight:700; white-space:nowrap;">$997</td>
+                <td style="color:var(--text-secondary);">—</td>
                 <td style="color:var(--text-secondary); white-space:nowrap;">2 semanas</td>
-                <td style="color:var(--text-secondary);">Solopreneurs que quieren automatizar lo que más tiempo les quita</td>
+                <td style="color:var(--text-secondary);">Probar el poder real de la IA personalizada sin descapitalizarte</td>
               </tr>
               <tr>
-                <td><strong>Varias áreas del negocio</strong></td>
-                <td style="color:var(--coral); font-weight:700; white-space:nowrap;">$3,500 - $5,000</td>
+                <td><strong>Sistema Pro</strong> — Varias áreas del negocio trabajando juntas</td>
+                <td style="color:var(--coral); font-weight:700; white-space:nowrap;">$2,500 - $5,000</td>
+                <td style="color:var(--text-secondary);">3 pagos mensuales</td>
                 <td style="color:var(--text-secondary); white-space:nowrap;">3-4 semanas</td>
-                <td style="color:var(--text-secondary);">Negocios con equipo que quieren sistematizar y dejar de ser el cuello de botella</td>
+                <td style="color:var(--text-secondary);">Negocios que quieren dejar de ser el cuello de botella de todo</td>
               </tr>
               <tr>
-                <td><strong>Sistema completo + herramientas de producción</strong></td>
+                <td><strong>Sistema Total</strong> — Transformación completa + herramientas de producción de contenido</td>
                 <td style="color:var(--coral); font-weight:700; white-space:nowrap;">$5,000 - $7,500</td>
+                <td style="color:var(--text-secondary);">3 pagos mensuales</td>
                 <td style="color:var(--text-secondary); white-space:nowrap;">4-5 semanas</td>
                 <td style="color:var(--text-secondary);">Negocios que quieren la transformación completa — contenido, operaciones, ventas, todo</td>
               </tr>
@@ -200,22 +204,22 @@ import Layout from '../layouts/Layout.astro';
         <!-- Pricing Cards (mobile) -->
         <div class="pricing-cards">
           <div class="card">
-            <p style="font-size:14px; font-weight:700; color:var(--text-primary); margin-bottom:6px;">Un área específica</p>
-            <p style="font-size:24px; font-weight:800; color:var(--coral); margin-bottom:4px;">$2,000 - $3,000</p>
+            <p style="font-size:14px; font-weight:700; color:var(--text-primary); margin-bottom:6px;">Tu Sistema Starter</p>
+            <p style="font-size:24px; font-weight:800; color:var(--coral); margin-bottom:4px;">$997</p>
             <p style="font-size:13px; color:var(--text-tertiary); margin-bottom:8px;">2 semanas</p>
-            <p style="color:var(--text-secondary);">Solopreneurs que quieren automatizar lo que más tiempo les quita</p>
+            <p style="color:var(--text-secondary);">Probar el poder real de la IA personalizada sin descapitalizarte</p>
           </div>
           <div class="card">
-            <p style="font-size:14px; font-weight:700; color:var(--text-primary); margin-bottom:6px;">Varias áreas del negocio</p>
-            <p style="font-size:24px; font-weight:800; color:var(--coral); margin-bottom:4px;">$3,500 - $5,000</p>
-            <p style="font-size:13px; color:var(--text-tertiary); margin-bottom:8px;">3-4 semanas</p>
-            <p style="color:var(--text-secondary);">Negocios con equipo que quieren sistematizar</p>
+            <p style="font-size:14px; font-weight:700; color:var(--text-primary); margin-bottom:6px;">Sistema Pro</p>
+            <p style="font-size:24px; font-weight:800; color:var(--coral); margin-bottom:4px;">$2,500 - $5,000</p>
+            <p style="font-size:13px; color:var(--text-tertiary); margin-bottom:8px;">3-4 semanas · 3 pagos mensuales</p>
+            <p style="color:var(--text-secondary);">Negocios que quieren dejar de ser el cuello de botella de todo</p>
           </div>
           <div class="card">
-            <p style="font-size:14px; font-weight:700; color:var(--text-primary); margin-bottom:6px;">Sistema completo + producción</p>
+            <p style="font-size:14px; font-weight:700; color:var(--text-primary); margin-bottom:6px;">Sistema Total</p>
             <p style="font-size:24px; font-weight:800; color:var(--coral); margin-bottom:4px;">$5,000 - $7,500</p>
-            <p style="font-size:13px; color:var(--text-tertiary); margin-bottom:8px;">4-5 semanas</p>
-            <p style="color:var(--text-secondary);">La transformación completa — contenido, operaciones, ventas</p>
+            <p style="font-size:13px; color:var(--text-tertiary); margin-bottom:8px;">4-5 semanas · 3 pagos mensuales</p>
+            <p style="color:var(--text-secondary);">Negocios que quieren la transformación completa — contenido, operaciones, ventas, todo</p>
           </div>
         </div>
       </div>
@@ -223,8 +227,8 @@ import Layout from '../layouts/Layout.astro';
       <!-- Pricing notes -->
       <div style="display:grid; gap:16px; margin-bottom:40px;" class="pricing-notes-grid" data-reveal-stagger>
         <div class="card">
-          <p class="section-label" style="color:var(--coral);">Pagos únicos</p>
-          <p><strong style="color:var(--text-primary);">Todos son pagos únicos.</strong> El sistema es tuyo. No dependes de mí para usarlo.</p>
+          <p class="section-label" style="color:var(--coral);">El sistema es tuyo</p>
+          <p><strong style="color:var(--text-primary);">El sistema es tuyo.</strong> Pagas una vez (o en cuotas que terminan) y no dependes de mí para usarlo.</p>
         </div>
         <div class="card">
           <p class="section-label" style="color:var(--coral);">Costo mensual de la plataforma</p>
